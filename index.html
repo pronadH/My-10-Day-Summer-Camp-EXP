@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My 10-Day Summer Camp Journey in Generative AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Orbitron (display) + Rajdhani (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== PARTICLE CANVAS BACKGROUND ========== -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-text">GenAI Camp</span>
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#msdc">My Camp</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">✦ Summer Camp 2025 ✦</div>
+      <h1 class="hero-title">
+        My Summer Camp Journey<br />
+        <span class="gradient-text">in Generative AI</span>
+      </h1>
+      <p class="hero-subtitle">
+        <span id="typingText"></span><span class="cursor-blink">|</span>
+      </p>
+      <div class="hero-cta">
+        <a href="#tools" class="btn-primary">Explore My Journey</a>
+        <a href="#about" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ========== MSDC SECTION ========== -->
+  <section id="msdc">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Where It All Happened</span>
+        <h2 class="section-title">My Camp: <span class="gradient-text">MSDC Manipal</span></h2>
+        <p class="section-desc">The place that sparked my journey into Generative AI</p>
+      </div>
+
+      <!-- Hero banner card -->
+      <div class="msdc-hero-card glass-card reveal">
+        <div class="msdc-logo-area">
+          <div class="msdc-emblem">🏛️</div>
+          <div class="msdc-hero-text">
+            <h2 class="msdc-org-name">Manipal Skill Development Center</h2>
+            <p class="msdc-tagline">"Building skills and shaping futures through hands-on learning."</p>
+            <a href="https://msdcskills.org/" target="_blank" rel="noopener" class="msdc-link-btn">
+              🌐 Visit msdcskills.org ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="msdc-grid">
+
+        <!-- Location -->
+        <div class="msdc-info-card glass-card reveal">
+          <div class="msdc-card-icon">📍</div>
+          <h3>Where It Is</h3>
+          <p>Located on the prestigious <strong>Dr. T.M.A. Pai Polytechnic Campus, Manipal – 576104</strong>, Karnataka, India — a town world-renowned for education and innovation.</p>
+          <div class="msdc-detail-row">
+            <span class="msdc-detail-label">📞</span>
+            <span class="msdc-detail-value">+91 81231 65069</span>
+          </div>
+          <div class="msdc-detail-row">
+            <span class="msdc-detail-label">📧</span>
+            <span class="msdc-detail-value">admissions@msdcskills.org</span>
+          </div>
+          <div class="msdc-detail-row">
+            <span class="msdc-detail-label">🕐</span>
+            <span class="msdc-detail-value">Mon – Sat, 9:00 AM – 5:00 PM</span>
+          </div>
+        </div>
+
+        <!-- What is MSDC -->
+        <div class="msdc-info-card glass-card reveal">
+          <div class="msdc-card-icon">🎓</div>
+          <h3>What is MSDC?</h3>
+          <p>An <strong>NSDC-approved</strong> skill training center backed by the Manipal Group's legacy. It offers <strong>22+ training segments</strong> — from Robotics and IoT to AI, Automotive, and IT Skills.</p>
+          <p>Trusted by over <strong>3,000+ students</strong> across India, MSDC blends real-world projects with expert mentorship to launch careers and entrepreneurs.</p>
+        </div>
+
+        <!-- Summer Camp -->
+        <div class="msdc-info-card glass-card reveal">
+          <div class="msdc-card-icon">☀️</div>
+          <h3>The Summer Camp</h3>
+          <p>I attended the <strong>MSDC Summer Camp 2025</strong> — a hands-on programme where students get immersive exposure to cutting-edge technologies in state-of-the-art labs.</p>
+          <p>Sessions covered <strong>Generative AI tools, Web Development, Python, and AI & ChatGPT</strong> — all taught by industry experts.</p>
+          <a href="https://msdcskills.org/msdc-manipal-summer-camp-2026-opening/" target="_blank" rel="noopener" class="msdc-read-more">Read Camp Announcement ↗</a>
+        </div>
+
+        <!-- Why MSDC is special -->
+        <div class="msdc-info-card glass-card reveal">
+          <div class="msdc-card-icon">⭐</div>
+          <h3>Why MSDC Stands Out</h3>
+          <ul class="msdc-feature-list">
+            <li><span class="msdc-bullet">→</span> NSDC-certified programs, nationally recognized</li>
+            <li><span class="msdc-bullet">→</span> Industry tie-ups: Bosch, and more</li>
+            <li><span class="msdc-bullet">→</span> Placement &amp; internship support</li>
+            <li><span class="msdc-bullet">→</span> State-of-the-art labs for practical training</li>
+            <li><span class="msdc-bullet">→</span> Hostel &amp; loan assistance available</li>
+            <li><span class="msdc-bullet">→</span> Summer &amp; winter camps for school students</li>
+          </ul>
+        </div>
+
+      </div><!-- /msdc-grid -->
+
+      <!-- Course tags strip -->
+      <div class="msdc-courses-strip reveal">
+        <div class="msdc-strip-title">Courses Offered at MSDC</div>
+        <div class="msdc-course-tags">
+          <span class="course-tag">🤖 Robotics</span>
+          <span class="course-tag">⚙️ Industrial Automation</span>
+          <span class="course-tag">🛸 Drone Technology</span>
+          <span class="course-tag">🌐 IoT Skills</span>
+          <span class="course-tag">💻 IT Skills</span>
+          <span class="course-tag">🧠 AI &amp; ChatGPT</span>
+          <span class="course-tag">🖥️ Web Development</span>
+          <span class="course-tag">🐍 Python Programming</span>
+          <span class="course-tag">🖨️ 3D Printing</span>
+          <span class="course-tag">🚗 Automotive</span>
+          <span class="course-tag">💄 Beauty &amp; Wellness</span>
+          <span class="course-tag">🎨 Animation</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// About</span>
+        <h2 class="section-title">What is <span class="gradient-text">Generative AI?</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: definition -->
+        <div class="about-card glass-card reveal">
+          <div class="about-icon">🤖</div>
+          <h3>Generative AI Explained</h3>
+          <p>Generative AI is a type of artificial intelligence that can <strong>create new content</strong> — including text, images, audio, video, and code — by learning patterns from existing data. Unlike traditional AI that classifies or predicts, generative models produce original outputs in response to prompts.</p>
+          <p>Powered by large language models (LLMs) and diffusion models, these systems can write essays, generate art, compose music, and even build applications.</p>
+        </div>
+
+        <!-- Right: what I learned -->
+        <div class="about-card glass-card reveal">
+          <div class="about-icon">🎯</div>
+          <h3>What I Learned at Camp</h3>
+          <ul class="learn-list">
+            <li><span class="check">✔</span> How Large Language Models work</li>
+            <li><span class="check">✔</span> Writing effective AI prompts</li>
+            <li><span class="check">✔</span> Building websites with AI assistance</li>
+            <li><span class="check">✔</span> Creating apps using no-code AI tools</li>
+            <li><span class="check">✔</span> Generating images with diffusion models</li>
+            <li><span class="check">✔</span> Using AI for productivity and documents</li>
+            <li><span class="check">✔</span> Speech synthesis and recognition AI</li>
+            <li><span class="check">✔</span> Ethical use of generative AI tools</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stats row -->
+      <div class="stats-row">
+        <div class="stat-item reveal">
+          <div class="stat-number" data-target="10">0</div>
+          <div class="stat-label">AI Tools Explored</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-label">Skills Gained</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-target="1">0</div>
+          <div class="stat-label">Epic Summer</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-label">% Inspired</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TOOLS SECTION ========== -->
+  <section id="tools">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Tools</span>
+        <h2 class="section-title">AI Tools <span class="gradient-text">I Learned</span></h2>
+        <p class="section-desc">Ten powerful generative AI tools explored during the camp</p>
+      </div>
+
+      <div class="tools-grid">
+
+        <!-- ChatGPT -->
+        <div class="tool-card glass-card reveal" data-color="cyan">
+          <div class="tool-icon-wrap">
+            <div class="tool-icon">💬</div>
+          </div>
+          <div class="tool-glow-ring"></div>
+          <h3 class="tool-name">ChatGPT</h3>
+          <p class="tool-desc">Asking questions, generating ideas, writing content, and having intelligent multi-turn conversations with OpenAI's powerful language model.</p>
+          <div class="tool-tag">Text Generation</div>
+        </div>
+
+        <!-- Lovable AI -->
+        <div class="tool-card glass-card reveal" data-color="pink">
+          <div class="tool-icon-wrap">
+            <div class="tool-icon">🌐</div>
+          </div>
+          <div class="tool-glow-ring"></div>
+          <h3 class="tool-name">Lovable AI</h3>
+          <p class="tool-desc">Building beautiful, fully functional websites in minutes by describing what you want. AI-powered front-end development made magical.</p>
+          <div class="tool-tag">Web Building</div>
+        </div>
+
+        <!-- Claude -->
+        <div class="tool-card glass-card reveal" data-color="purple">
+          <div class="tool-icon-wrap">
+            <div class="tool-icon">⚡</div>
+          </div>
+          <div class="tool-glow-ring"></div>
+          <h3 class="tool-name">Claude</h3>
+          <p class="tool-desc">Coding assistance, summarizing long documents, analysis, and thoughtful conversation — Anthropic's AI known for safety and nuance.</p>
+          <div class="tool-tag">Coding &amp; Summarizing</div>
+        </div>
+
+        <!-- Hix AI -->
+        <div class="tool-card glass-card reveal" data-color="green">
+          <div class="tool-icon-wrap">
+            <div class="tool-icon">📄</div>
+          </div>
+          <div class="tool-glow-ring"></div>
+          <h3 class="tool-name">Hix AI</h3>
+          <p class="tool-desc">Creating professional documents, essays, emails, and reports at lightning speed using AI-powered writing tools designed for productivity.</p>
+          <div class="tool-tag">Document Creation</div>
+        </div>
+
+        <!-- Bolt -->
+        <div class="tool-card glass-card reveal" data-color="orange">
+          <div class="tool-icon-wrap">
+            <div class="tool-icon">🔧</div>
+          </div>
+          <div class="tool-glow-ring"></div>
+          <h3 class="tool-name">Bolt</h3>
+          <p class="tool-desc">Building full-stack apps with AI guidance in a browser-based environment. Rapid prototyping from idea to working application instantly.</p>
+          <div class="tool-tag">App Building</div>
+        </div>
+
+        <!-- MIT App Inventor -->
+        <div class="tool-card glass-card reveal" data-color="blue">
+          <div class="tool-icon-wrap">
+            <div class="tool-icon">📱</div>
+          </div>
+          <div class="tool-glow-ring"></div>
+          <h3 class="tool-name">MIT App Inventor</h3>
+          <p class="tool-desc">Visual block-based programming to create Android apps. MIT's platform makes mobile app development accessible to every student.</p>
+          <div class="tool-tag">App Development</div>
+        </div>
+
+        <!-- Stable Diffusion -->
+        <div class="tool-card glass-card reveal" data-color="violet">
+          <div class="tool-icon-wrap">
+            <div class="tool-icon">🎨</div>
+          </div>
+          <div class="tool-glow-ring"></div>
+          <h3 class="tool-name">Stable Diffusion</h3>
+          <p class="tool-desc">Generating stunning AI artwork and photorealistic images from text prompts. Exploring creative limits of diffusion-based image generation.</p>
+          <div class="tool-tag">Image Generation</div>
+        </div>
+
+        <!-- Speechma -->
+        <div class="tool-card glass-card reveal" data-color="teal">
+          <div class="tool-icon-wrap">
+            <div class="tool-icon">🎙️</div>
+          </div>
+          <div class="tool-glow-ring"></div>
+          <h3 class="tool-name">Speechma</h3>
+          <p class="tool-desc">Converting speech to text and text to natural-sounding speech. AI-powered voice tools for accessibility, content creation, and learning.</p>
+          <div class="tool-tag">Speech AI</div>
+        </div>
+
+        <!-- Napkin AI -->
+        <div class="tool-card glass-card reveal" data-color="yellow">
+          <div class="tool-icon-wrap">
+            <div class="tool-icon">🗺️</div>
+          </div>
+          <div class="tool-glow-ring"></div>
+          <h3 class="tool-name">Napkin AI</h3>
+          <p class="tool-desc">Turning ideas and text into beautiful flowcharts, diagrams, and visual maps. Making complex concepts easy to understand at a glance.</p>
+          <div class="tool-tag">Diagrams &amp; Flows</div>
+        </div>
+
+        <!-- Presenti AI -->
+        <div class="tool-card glass-card reveal" data-color="rose">
+          <div class="tool-icon-wrap">
+            <div class="tool-icon">📊</div>
+          </div>
+          <div class="tool-glow-ring"></div>
+          <h3 class="tool-name">Presenti AI</h3>
+          <p class="tool-desc">Generating polished, professional presentations from a simple prompt or outline. AI-designed slides that look like expert design work.</p>
+          <div class="tool-tag">Presentations</div>
+        </div>
+
+      </div><!-- /tools-grid -->
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Skills</span>
+        <h2 class="section-title">Skills <span class="gradient-text">I Gained</span></h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon">✍️</div>
+          <h3>Prompt Writing</h3>
+          <p>Crafting clear, detailed, and creative prompts to get the best results from any AI model — the most essential skill in the AI era.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="92"></div>
+          </div>
+          <span class="skill-pct">Expert Level</span>
+        </div>
+
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon">🌐</div>
+          <h3>Website Creation</h3>
+          <p>Using AI tools like Lovable and Claude to design, code, and deploy websites without needing deep expertise in every technology.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80"></div>
+          </div>
+          <span class="skill-pct">Advanced</span>
+        </div>
+
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon">📱</div>
+          <h3>App Development Basics</h3>
+          <p>Building functional mobile apps using MIT App Inventor and Bolt — learning the fundamentals of how apps are structured and deployed.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="70"></div>
+          </div>
+          <span class="skill-pct">Intermediate</span>
+        </div>
+
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon">🎨</div>
+          <h3>AI Creativity</h3>
+          <p>Generating images, diagrams, presentations, and videos using AI tools — blending human creativity with machine intelligence.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="88"></div>
+          </div>
+          <span class="skill-pct">Advanced</span>
+        </div>
+
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon">🧠</div>
+          <h3>AI Literacy</h3>
+          <p>Understanding how generative AI works, its strengths and limitations, ethical considerations, and how to use it responsibly.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="85"></div>
+          </div>
+          <span class="skill-pct">Advanced</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONCLUSION SECTION ========== -->
+  <section id="conclusion">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Conclusion</span>
+        <h2 class="section-title">Looking <span class="gradient-text">Forward</span></h2>
+      </div>
+
+      <div class="conclusion-grid">
+        <div class="conclusion-main glass-card reveal">
+          <div class="quote-mark">"</div>
+          <h3>What I Learned Overall</h3>
+          <p>This summer camp transformed how I see technology. Before, AI felt like something only scientists and engineers could use. Now I understand that <strong>generative AI is a creative partner</strong> — available to anyone willing to learn the language of prompts.</p>
+          <p>I explored 10 powerful tools across writing, design, coding, speech, and app development. Each one showed me a different dimension of what AI can do — and more importantly, what <em>we</em> can do <em>with</em> AI.</p>
+          <p>The biggest lesson? <strong>The future doesn't belong to people who fear AI — it belongs to those who learn to collaborate with it.</strong></p>
+        </div>
+
+        <div class="conclusion-side">
+          <div class="future-card glass-card reveal">
+            <div class="future-icon">🚀</div>
+            <h3>How AI Will Help My Future</h3>
+            <ul class="future-list">
+              <li>Build apps and websites for my ideas</li>
+              <li>Create visual content for projects</li>
+              <li>Write and research more efficiently</li>
+              <li>Solve real-world problems with AI</li>
+              <li>Stay ahead in a tech-driven world</li>
+            </ul>
+          </div>
+
+          <div class="thank-card glass-card reveal">
+            <div class="future-icon">✨</div>
+            <h3>Thank You, Camp!</h3>
+            <p>This experience sparked something in me. I'm no longer just a user of technology — I'm a <strong>creator</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">GenAI Camp</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <div class="footer-center">
+          <p class="footer-name">Summer Camp Project</p>
+          <p class="footer-sub">Generative AI Exploration · 2025</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">↑ Back to Top</a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">Built with curiosity, creativity, and a little help from AI. 🤖</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
