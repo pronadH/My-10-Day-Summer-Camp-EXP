@@ -108,7 +108,40 @@
 })();
 
 
-/* ── 3. TYPING ANIMATION ── */
+/* ── 3. DARK / LIGHT THEME TOGGLE ── */
+(function initThemeToggle() {
+  const themeToggle = document.getElementById('themeToggle');
+  const body = document.body;
+  const storageKey = 'genaiTheme';
+
+  if (!themeToggle) return;
+
+  function setTheme(theme) {
+    const isLight = theme === 'light';
+    body.classList.toggle('theme-light', isLight);
+    body.classList.toggle('theme-dark', !isLight);
+    themeToggle.querySelector('.theme-icon').textContent = isLight ? '🌙' : '☀️';
+    themeToggle.querySelector('.theme-label').textContent = isLight ? 'Dark' : 'Light';
+    themeToggle.setAttribute('aria-label', `Switch to ${isLight ? 'dark' : 'light'} theme`);
+    localStorage.setItem(storageKey, theme);
+  }
+
+  function getInitialTheme() {
+    const saved = localStorage.getItem(storageKey);
+    if (saved === 'light' || saved === 'dark') return saved;
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  }
+
+  themeToggle.addEventListener('click', () => {
+    const nextTheme = body.classList.contains('theme-light') ? 'dark' : 'light';
+    setTheme(nextTheme);
+  });
+
+  setTheme(getInitialTheme());
+})();
+
+
+/* ── 4. TYPING ANIMATION ── */
 (function initTyping() {
   const el       = document.getElementById('typingText');
   const phrases  = [
